@@ -127,3 +127,11 @@ ul {
     padding: 0rem;
     margin-bottom: -1rem;
 }
+
+.main .column{
+    width: 300px;
+}
+
+.main .column img{
+    overflow-x: hidden;
+}
