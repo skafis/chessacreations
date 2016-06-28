@@ -126,12 +126,36 @@ ul {
 .row .column {
     padding: 0rem;
     margin-bottom: -1rem;
+    max-height: 50%;
+    max-width: 25%;
+
 }
 
-.main .column{
-    width: 300px;
+.main .row .column{
+    width: 25%;
+
 }
 
 .main .column img{
-    overflow-x: hidden;
+    width: auto;
+    height: inherit;
+    overflow: hidden;
+}
+
+.main .row .text{
+    position: relative;
+    height: auto;
+}
+
+
+.main .row .text h4{
+    position: absolute;
+    top: 43%;
+    color: white;
+    float: right;
+    text-align: right;
+    margin-left: 25%;
+    font-weight: bold;
+    letter-spacing: -2px;
+
 }
