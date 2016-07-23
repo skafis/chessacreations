@@ -196,8 +196,8 @@ ul {
 }
 
 
-
-.collection h3{
+/*collection*/
+h3{
     text-align: center;
     font-weight: 600;
 
@@ -206,10 +206,17 @@ ul {
 
 .row.collection {
     width: 100%;
-    height: 70hv;
+    height: 80hv;
     align-content: center;
 }
 
 .collection .image-wrapper{
+    height: 20rem
+}
 
+/*arrivals*/
+
+.arrivals {
+    width: 100vw;
+    height: auto;
 }
