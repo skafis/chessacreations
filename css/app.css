@@ -445,3 +445,46 @@ h3 {
     width: auto;
     overflow: hidden;
 }
+
+/*new arrivals*/
+.content {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.content .arrival-content{
+    opacity: 0;
+    background-color: rgba(41, 44, 47, 0.42);
+    transition: all 0.4s ease-i
+}
+.content:hover img{
+    transform: scale(1.2)
+}
+.arrival-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.arrival-content p{
+    height: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 30%;
+}
+
+.arrival-content .button{
+    background-color: #292c2f;
+    opacity: 0;
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    margin-top: 30%;
+}
+
+.content:hover .arrival-content{
+    opacity: 1;
+}
