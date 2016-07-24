@@ -6,9 +6,16 @@
 }
 
 body {
-/*    background: #f9f2f4;*/
+    /*    background: #f9f2f4;*/
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    margin: 3px;
+    width: 100vw;
+    height: auto;
+}
+
+body .container {
+    margin: 3px;
 }
 
 a {
@@ -208,13 +215,22 @@ h3 {
 }
 
 .row.collection {
-    width: 100%;
+    width: 100vw;
     height: 80hv;
+    overflow: hidden;
+    position: relative;
     align-content: center;
+    margin: 3px;
 }
 
 .collection .image-wrapper {
-    height: 20rem
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 
@@ -330,4 +346,86 @@ h3 {
 
 .logo i {
     margin-right: 0.5rem;
+}
+
+
+/*footer end*/
+
+.image-overlay-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    top: 0;
+    left: 0;
+    border: 3px;
+}
+
+.overlay-fade-in p {
+    letter-spacing: 0.15em;
+    color: #f4f4f4;
+    font-size: 28px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.overlay-fade-in img {
+    transition: all 0.2s linear;
+}
+
+.overlay-fade-in .image-overlay-content {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+.overlay-fade-in h2 {
+    color: #f2f2f2;
+    font-size: 1.8rem;
+    margin-top: 30%;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-fade-in .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #fff;
+    color: #222;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    border: 1px solid #999;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay-fade-in .button:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.overlay-fade-in:hover img {
+    transform: scale(1.5);
+}
+
+.overlay-fade-in:hover .image-overlay-content {
+    opacity: 1;
+}
+
+.overlay-fade-in:hover h2,
+.overlay-fade-in p,
+.overlay-fade-in .button {
+    opacity: 1;
+}
+
+.overlay-fade-in:hover p {
+    transition-delay: 0.1s;
+}
+
+.overlay-fade-in:hover .button {
+    transition-delay: 0.2s;
 }
