@@ -212,6 +212,7 @@ ul {
 h3 {
     text-align: center;
     font-weight: 600;
+    color: #292c2f;
 }
 
 .row.collection {
@@ -221,6 +222,7 @@ h3 {
     position: relative;
     align-content: center;
     margin: 3px;
+    padding: 0.2em;
 }
 
 .collection .image-wrapper {
@@ -239,6 +241,7 @@ h3 {
 .arrivals {
     width: 100vw;
     height: auto;
+    padding: 0.2em;
 }
 
 
@@ -359,17 +362,20 @@ h3 {
     color: white;
     top: 0;
     left: 0;
-    border: 3px;
+    border: 1px solid;
 }
 
-.overlay-fade-in p {
+.overlay-fade-in p{
     letter-spacing: 0.15em;
     color: #f4f4f4;
-    font-size: 28px;
+    font-size: 22px;
     opacity: 0;
     transition: all 0.2s linear;
 }
-
+.overlay-fade-in h4{
+    color: white;
+    text-transform: uppercase;
+}
 .overlay-fade-in img {
     transition: all 0.2s linear;
 }
@@ -380,7 +386,7 @@ h3 {
     transition: all 0.4s ease-in-out;
 }
 
-.overlay-fade-in h2 {
+.overlay-fade-in h2{
     color: #f2f2f2;
     font-size: 1.8rem;
     margin-top: 30%;
@@ -428,4 +434,14 @@ h3 {
 
 .overlay-fade-in:hover .button {
     transition-delay: 0.2s;
+}
+
+.image-wrapper img{
+
+}
+
+.image-wrapper img {
+    height: 70vh;
+    width: auto;
+    overflow: hidden;
 }
