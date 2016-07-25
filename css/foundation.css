@@ -1008,7 +1008,7 @@ button {
   line-height: 1; }
 
 .row {
-  max-width: 92.5rem;
+  max-width: 100vw;
   margin-left: auto;
   margin-right: auto; }
   .row::before, .row::after {

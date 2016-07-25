@@ -362,7 +362,9 @@ h3 {
     color: white;
     top: 0;
     left: 0;
-    border: 1px solid;
+    border: 2px solid rgba(0,150,255,0.91);
+    box-sizing: content-box;
+
 }
 
 .overlay-fade-in p{
@@ -451,11 +453,14 @@ h3 {
     height: 100%;
     position: relative;
     overflow: hidden;
+
 }
 .content .arrival-content{
     opacity: 0;
     background-color: rgba(41, 44, 47, 0.42);
-    transition: all 0.4s ease-i
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+    position: absolute;
 }
 .content:hover img{
     transform: scale(1.2)
