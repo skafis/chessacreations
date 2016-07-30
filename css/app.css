@@ -16,7 +16,7 @@ body {
 
 body .container {
     width: 100vw;
-    margin: 0 auto;
+    margin: -1 auto;
 }
 
 a {
@@ -31,10 +31,16 @@ ul {
 .nav {
     background: #292c2f;
     min-height: 50px;
-    margin: -5 -5;
+    margin-bottom: -8rem;
 
 }
 
+.nav img{
+    height: 50px;
+    width: 50px;
+}
+
+}
 .nav .left {
     float: left;
     margin-left: 1em;
@@ -91,7 +97,7 @@ ul {
     }
     .toggle-nav {
         display: block;
-        padding: 10px;
+/*        padding: 0px;*/
         position: absolute;
         right: 10px;
         line-height: 30px;
@@ -142,7 +148,7 @@ ul {
     height: 90vh;
     padding: 0.3rem;
     position: relative;
-    margin: -5 -5;
+    margin-top: -10em;
 }
 
 
@@ -160,13 +166,13 @@ h3 {
     overflow: hidden;
     position: relative;
     align-content: center;
-    margin: 0 3px;
-    padding: 0 0.2em;
+    margin: 0;
+    padding: 0;
 }
 
 .row.collection .columns{
-    margin: -6 -6;
-    padding: 0 0;
+    margin: 0;
+    padding: 0;
 }
 .collection .image-wrapper {
     height: 100%;
@@ -174,8 +180,6 @@ h3 {
     overflow: hidden;
     position: relative;
     text-align: center;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.04);
 }
 .collection .image-wrapper img{
     overflow-x: hidden;
@@ -187,7 +191,7 @@ h3 {
 .arrivals {
     width: 100vw;
     height: auto;
-    padding: 0.2em;
+/*    padding: 0.2em;*/
 }
 
 
@@ -296,7 +300,6 @@ h3 {
 .logo i {
     margin-right: 0.5rem;
 }
-
 
 /*footer end*/
 
