@@ -161,6 +161,31 @@ ul {
 }
 
 
+.intro-text {
+    position: absolute;
+    text-transform:capitalize;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.intro-text h2{
+    font-family: 'Ruthie', cursive;
+    font-size: 7rem;
+    font-weight: 650;
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.intro-text p{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
+}
+
 /*collection*/
 
 h3 {
@@ -193,6 +218,217 @@ h3 {
 .collection .image-wrapper img{
     overflow-x: hidden;
     width: 100%;
+}
+
+.image-overlay-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    top: 0;
+    left: 0;
+    border: 2px solid rgba(0,150,255,0.91);
+    box-sizing: content-box;
+
+}
+
+.overlay-fade-in p{
+    letter-spacing: 0.15em;
+    color: #f4f4f4;
+    font-size: 22px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.overlay-fade-in h4{
+    color: white;
+    text-transform: uppercase;
+}
+.overlay-fade-in img {
+    transition: all 0.2s linear;
+}
+
+.overlay-fade-in .image-overlay-content {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+.overlay-fade-in h2{
+    color: #f2f2f2;
+    font-size: 1.8rem;
+    margin-top: 30%;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-fade-in .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #fff;
+    color: #222;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    border: 1px solid #999;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay-fade-in .button:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.overlay-fade-in:hover img {
+    transform: scale(1.5);
+}
+
+.overlay-fade-in:hover .image-overlay-content {
+    opacity: 1;
+}
+
+.overlay-fade-in:hover h2,
+.overlay-fade-in p,
+.overlay-fade-in .button {
+    opacity: 1;
+}
+
+.overlay-fade-in:hover p {
+    transition-delay: 0.1s;
+}
+
+.overlay-fade-in:hover .button {
+    transition-delay: 0.2s;
+}
+
+.image-wrapper img{
+
+}
+
+.image-wrapper img {
+    height: 70vh;
+    width: auto;
+    overflow: hidden;
+}
+
+/*arrivals*/
+
+.arrivals .columns{
+    padding: 0;
+}
+.arrivals {
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+.content {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.content .arrival-content{
+    opacity: 0;
+    background-color: rgba(41, 44, 47, 0.42);
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+    position: absolute;
+}
+.content img{
+    position: relative;
+    overflow: hidden;
+    margin-top: -1.9em;
+}
+.content:hover img{
+    transform: scale(1.2)
+}
+.arrival-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.arrival-content p{
+    height: 100%;
+    text-align: center;
+    font-size: 1.2em;
+/*    margin-top: 30%;*/
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.arrival-content .button{
+    background-color: #292c2f;
+    opacity: 0;
+/*    position: relative;*/
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    margin-top: -30%;
+}
+
+.content:hover .arrival-content{
+    opacity: 1;
+}
+
+.ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+.ribbon-text {
+    font: bold 15px Sans-Serif;
+    color: #333;
+    text-align: center;
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    position: relative;
+    overflow: hidden;
+    padding: 7px 0;
+    right: -87%;
+    top: 22px;
+    width: 9em;
+    background-color: #292c2f;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#292c2f), to(#292c2f));
+    background-image: -webkit-linear-gradient(top, #292c2f, #292c2f);
+    background-image:    -moz-linear-gradient(top, #292c2f, #292c2f);
+    background-image:     -ms-linear-gradient(top, #292c2f, #292c2f);
+    background-image:      -o-linear-gradient(top, #292c2f, #292c2f);
+     color: #6a6340;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    z-index: 999;
+
+}
+
+.ribbon-text:before, .ribbon-text:after{
+    content: "";
+    border-top:   3px solid #292c2f;
+    border-left:  3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: -3px;
+}
+
+.ribbon-text:before {
+  left: 0;
+}
+.ribbon-text:after {
+  right: 0;
 }
 
 /*footer*/
@@ -302,240 +538,3 @@ h3 {
 }
 
 /*footer end*/
-
-
-.image-overlay-content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    color: white;
-    top: 0;
-    left: 0;
-    border: 2px solid rgba(0,150,255,0.91);
-    box-sizing: content-box;
-
-}
-
-.overlay-fade-in p{
-    letter-spacing: 0.15em;
-    color: #f4f4f4;
-    font-size: 22px;
-    opacity: 0;
-    transition: all 0.2s linear;
-}
-.overlay-fade-in h4{
-    color: white;
-    text-transform: uppercase;
-}
-.overlay-fade-in img {
-    transition: all 0.2s linear;
-}
-
-.overlay-fade-in .image-overlay-content {
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    transition: all 0.4s ease-in-out;
-}
-
-.overlay-fade-in h2{
-    color: #f2f2f2;
-    font-size: 1.8rem;
-    margin-top: 30%;
-    opacity: 0;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.overlay-fade-in .button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #fff;
-    color: #222;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-    position: relative;
-    border: 1px solid #999;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-.overlay-fade-in .button:hover {
-    box-shadow: 0 0 5px #000;
-}
-
-.overlay-fade-in:hover img {
-    transform: scale(1.5);
-}
-
-.overlay-fade-in:hover .image-overlay-content {
-    opacity: 1;
-}
-
-.overlay-fade-in:hover h2,
-.overlay-fade-in p,
-.overlay-fade-in .button {
-    opacity: 1;
-}
-
-.overlay-fade-in:hover p {
-    transition-delay: 0.1s;
-}
-
-.overlay-fade-in:hover .button {
-    transition-delay: 0.2s;
-}
-
-.image-wrapper img{
-
-}
-
-.image-wrapper img {
-    height: 70vh;
-    width: auto;
-    overflow: hidden;
-}
-
-/*new arrivals*/
-/*arrivals*/
-
-.arrivals .columns{
-    padding: 0;
-}
-.arrivals {
-    width: 100vw;
-    height: auto;
-    position: relative;
-}
-
-.content {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-
-}
-.content .arrival-content{
-    opacity: 0;
-    background-color: rgba(41, 44, 47, 0.42);
-    transition: all 0.4s ease-in-out;
-    box-sizing: border-box;
-    position: absolute;
-}
-.content img{
-    position: relative;
-    overflow: hidden;
-    margin-top: -1.9em;
-}
-.content:hover img{
-    transform: scale(1.2)
-}
-.arrival-content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    color: #fff;
-    top: 0;
-    left: 0;
-    text-align: center;
-}
-.arrival-content p{
-    height: 100%;
-    text-align: center;
-    font-size: 1.2em;
-/*    margin-top: 30%;*/
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.arrival-content .button{
-    background-color: #292c2f;
-    opacity: 0;
-/*    position: relative;*/
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-    margin-top: -30%;
-}
-
-.content:hover .arrival-content{
-    opacity: 1;
-}
-
-.intro-text {
-    position: absolute;
-    text-transform:capitalize;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.intro-text h2{
-    font-family: 'Ruthie', cursive;
-    font-size: 7rem;
-    font-weight: 650;
-    color: white;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-
-.intro-text p{
-    color: white;
-    text-align: center;
-    font-size: 1.5em;
-    text-transform: capitalize;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-
-}
-.ribbon-wrapper {
-    width: 85px;
-    height: 88px;
-    overflow: hidden;
-    position: absolute;
-    top: -3px;
-    right: -3px;
-}
-
-.ribbon-text {
-    font: bold 15px Sans-Serif;
-    color: #333;
-    text-align: center;
-    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform:    rotate(45deg);
-    -ms-transform:     rotate(45deg);
-    -o-transform:      rotate(45deg);
-    position: relative;
-    overflow: hidden;
-    padding: 7px 0;
-    right: -87%;
-    top: 22px;
-    width: 9em;
-    background-color: #292c2f;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#292c2f), to(#292c2f));
-    background-image: -webkit-linear-gradient(top, #292c2f, #292c2f);
-    background-image:    -moz-linear-gradient(top, #292c2f, #292c2f);
-    background-image:     -ms-linear-gradient(top, #292c2f, #292c2f);
-    background-image:      -o-linear-gradient(top, #292c2f, #292c2f);
-     color: #6a6340;
-    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    z-index: 999;
-
-}
-
-.ribbon-text:before, .ribbon-text:after{
-    content: "";
-    border-top:   3px solid #292c2f;
-    border-left:  3px solid transparent;
-    border-right: 3px solid transparent;
-    position:absolute;
-    bottom: -3px;
-}
-
-.ribbon-text:before {
-  left: 0;
-}
-.ribbon-text:after {
-  right: 0;
-}
