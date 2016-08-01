@@ -507,7 +507,7 @@ h3 {
     position: relative;
     overflow: hidden;
     padding: 7px 0;
-    right: -39em;
+    right: -87%;
     top: 22px;
     width: 9em;
     background-color: #292c2f;
@@ -526,7 +526,7 @@ h3 {
 
 .ribbon-text:before, .ribbon-text:after{
     content: "";
-    border-top:   3px solid #6e8900;
+    border-top:   3px solid #292c2f;
     border-left:  3px solid transparent;
     border-right: 3px solid transparent;
     position:absolute;
