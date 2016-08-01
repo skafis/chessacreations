@@ -115,7 +115,7 @@ ul {
     }
 
     .style-mobile{
-        background: #ffffff;
+        background: #5c5353;
         top : 51px;
         position : absolute;
         width : 100%;
@@ -478,7 +478,14 @@ h3 {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-/*
+.intro-text p{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
+}
 .ribbon-wrapper {
     width: 85px;
     height: 88px;
@@ -487,7 +494,6 @@ h3 {
     top: -3px;
     right: -3px;
 }
-*/
 
 .ribbon-text {
     font: bold 15px Sans-Serif;
@@ -501,8 +507,8 @@ h3 {
     position: relative;
     overflow: hidden;
     padding: 7px 0;
-    right: -47em;
-    top: 23px;
+    right: -39em;
+    top: 22px;
     width: 9em;
     background-color: #292c2f;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#292c2f), to(#292c2f));
