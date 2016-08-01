@@ -9,7 +9,7 @@ body {
     /*    background: #f9f2f4;*/
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    margin: 3px;
+    margin: auto;
     width: 100vw;
     height: auto;
 }
@@ -38,7 +38,7 @@ ul {
     background: #292c2f;
     min-height: 20px;
     position:fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
     z-index: 999;
 }
@@ -147,14 +147,15 @@ ul {
 /*Slide Image*/
 
 .main {
+
     padding-top: 5em ;
-/*    margin-top: 3em;*/
+    width: 100vw;
 }
 
 .orbit-container {
     width: 100vw;
     height: 90vh;
-    padding: 0.3rem;
+    padding: 0 auto;
     position: relative;
     margin-top: -3em;
 }
@@ -472,7 +473,7 @@ h3 {
 .intro-text h2{
     font-family: 'Ruthie', cursive;
     font-size: 7rem;
-    font-weight: 500;
+    font-weight: 650;
     color: white;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
