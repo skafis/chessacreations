@@ -16,7 +16,7 @@ body {
 
 body .container {
     width: 100vw;
-    margin: -1 auto;
+    margin: auto;
 }
 
 a {
@@ -27,27 +27,28 @@ a {
 ul {
     list-style: none;
 }
-
+/*navigation*/
+.nav-center,
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
 .nav {
     background: #292c2f;
-    min-height: 50px;
-    margin-bottom: -8rem;
-
+    min-height: 20px;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
 }
 
-.nav img{
-    height: 50px;
-    width: 50px;
-}
-
-}
 .nav .left {
     float: left;
     margin-left: 1em;
 }
 
 .nav .left li {
-    border-bottom: 1px solid #f2f2f2;
     font-size: 14px;
     float: left;
 }
@@ -68,7 +69,6 @@ ul {
 }
 
 .nav .right li {
-    border-bottom: 1px solid #f2f2f2;
     font-size: 14px;
     float: left;
 }
@@ -91,56 +91,64 @@ ul {
     display: block;
 }
 
-@media only screen and (max-width: 640px) {
-    .nav {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+/****************************MEDIA QUERIES************************************/
+@media only screen and (max-width: 640px){
+    .nav{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
     }
-    .toggle-nav {
+    .nav-center{
+        width: 100%;
+    }
+    .toggle-nav{
         display: block;
-/*        padding: 0px;*/
+        padding: 10px;
         position: absolute;
         right: 10px;
         line-height: 30px;
     }
-    .toggle-nav:after {
+    .toggle-nav:after{
         content: ' Menu';
     }
-    .nav-mobile {
+
+    .nav-mobile{
         display: none;
     }
-    .style-mobile {
+
+    .style-mobile{
         background: #ffffff;
-        top: 51px;
-        position: absolute;
-        width: 100%;
+        top : 51px;
+        position : absolute;
+        width : 100%;
     }
-    .style-mobile li {
+
+    .style-mobile li{
         display: block;
         width: 100%;
     }
-    .nav .right {
+
+    .nav .right{
         display: block;
         float: none;
         margin: 0em;
     }
-    .nav .left {
+
+    .nav .left{
         display: block;
         float: none;
         margin: 0em;
     }
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 641px){
     .nav-mobile {
-        display: block !important;
+        display:block !important;
     }
 }
-
 /*Slide Image*/
 
 .main {
-    padding: 0 0;
-    margin: 0 0;
+    padding-top: 5em ;
+/*    margin-top: 3em;*/
 }
 
 .orbit-container {
@@ -148,7 +156,7 @@ ul {
     height: 90vh;
     padding: 0.3rem;
     position: relative;
-    margin-top: -10em;
+    margin-top: -3em;
 }
 
 

@@ -1,5 +1,8 @@
 $(document).foundation();
 
+// ********************************************************
+// NAV BAR
+//
 $(function(){
 
     // Returns width of browser viewport
