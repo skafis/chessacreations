@@ -328,6 +328,11 @@ h3 {
     width: auto;
     overflow: hidden;
 }
+@media only screen and (max-width: 640px){
+    .row.collection {
+        height: 20%;
+    }
+}
 
 /*arrivals*/
 
@@ -446,6 +451,11 @@ h3 {
   right: 0;
 }
 
+@media only screen and (max-width: 640px){
+    .ribbon-text {
+        right: -67%;
+    }
+}
 /*footer*/
 
 .footer {
