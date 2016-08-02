@@ -45,7 +45,7 @@ ul {
 
 .nav .left {
     float: left;
-    margin-left: 1em;
+    margin-left: -6.5%;
 }
 
 .nav .left li {
@@ -65,7 +65,7 @@ ul {
 
 .nav .right {
     float: right;
-    margin-right: 1em;
+    margin-right: -5.5%;
 }
 
 .nav .right li {
@@ -95,13 +95,15 @@ ul {
 @media only screen and (max-width: 640px){
     .nav{
         border-bottom: 1px solid rgba(0,0,0,0.1);
+        height: 35px;
+        z-index: 999;
     }
     .nav-center{
         width: 100%;
     }
     .toggle-nav{
         display: block;
-        padding: 10px;
+        padding: 5px;
         position: absolute;
         right: 10px;
         line-height: 30px;
@@ -116,7 +118,7 @@ ul {
 
     .style-mobile{
         background: #5c5353;
-        top : 51px;
+        top : 35px;
         position : absolute;
         width : 100%;
     }
@@ -186,6 +188,9 @@ ul {
 
 }
 
+@media only screen and (max-width: 640px){
+
+}
 /*collection*/
 
 h3 {
