@@ -189,7 +189,17 @@ ul {
 }
 
 @media only screen and (max-width: 640px){
-
+    .orbit-container {
+        height: 30%;
+    }
+    .intro-text h2{
+        font-size: 3.8rem;
+        font-weight: 700;
+        }
+    .intro-text p{
+        font-size: 1.1em;
+        font-weight: 600;
+    }
 }
 /*collection*/
 
