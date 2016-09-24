@@ -293,7 +293,7 @@ h3 {
 .overlay-fade-in h2{
     color: #f2f2f2;
     font-size: 1.8rem;
-    margin-top: 30%;
+    margin-top: 10%;
     opacity: 0;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
@@ -413,7 +413,7 @@ h3 {
 .content img{
     position: relative;
     overflow: hidden;
-    margin-top: -1.9em;
+    margin-top: -2.2em;
 }
 .content:hover img{
     transform: scale(1.2)
@@ -469,10 +469,10 @@ h3 {
     -o-transform:      rotate(45deg);
     position: relative;
     overflow: hidden;
-    padding: 7px 0;
-    right: -87%;
+    padding: 9px 0;
+    right: -80.6%;
     top: 22px;
-    width: 9em;
+    width: 11em;
     background-color: #292c2f;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#292c2f), to(#292c2f));
     background-image: -webkit-linear-gradient(top, #292c2f, #292c2f);
@@ -483,7 +483,7 @@ h3 {
     -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
     -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-    z-index: 999;
+    z-index: 800;
 
 }
 
@@ -505,9 +505,19 @@ h3 {
 
 @media only screen and (max-width: 640px){
     .ribbon-text {
-        right: -67%;
+        right: -79%;
     }
 }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .ribbon-text {
+        right: -50%;
+    }
+
+}
+
 /*footer*/
 
 .footer {
@@ -515,6 +525,7 @@ h3 {
     text-align: center;
     font-size: 1.2rem;
     padding: 1rem;
+    height: 20%;
 }
 
 .footer .social a {
