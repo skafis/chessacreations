@@ -54,7 +54,8 @@ div.card {
   z-index: 1;
 }
 div.card img {
-  max-width: 300px;
+  width: 350px;
+  height: 250px;
 }
 div.card div.card-title {
 /*  background: #ffffff;*/
