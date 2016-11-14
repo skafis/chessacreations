@@ -437,12 +437,18 @@ h3 {
 }
 
 .arrival-content .button{
-    background-color: #292c2f;
-    opacity: 0;
-/*    position: relative;*/
     display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #fff;
+    color: #222;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    border: 1px solid #999;
+    opacity: 1;
     transition: all 0.2s ease-in-out;
-    margin-top: -30%;
+    margin-top: -40%;
 }
 
 .content:hover .arrival-content{
