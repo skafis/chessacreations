@@ -433,7 +433,7 @@ h3 {
 .content img{
     position: relative;
     overflow: hidden;
-    margin-top: -2.2em;
+    margin-top: -2.3em;
 }
 .content:hover img{
     transform: scale(1.2)
@@ -496,7 +496,7 @@ h3 {
     position: relative;
     overflow: hidden;
     padding: 9px 0;
-    right: -80.6%;
+    right: -83%;
     top: 22px;
     width: 11em;
     background-color: #292c2f;
@@ -531,7 +531,7 @@ h3 {
 
 @media only screen and (max-width: 640px){
     .ribbon-text {
-        right: -79%;
+        right: -68%;
     }
     .content .arrival-content{
     opacity: 1;
@@ -544,7 +544,7 @@ h3 {
   and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2) {
         .ribbon-text {
-        right: -50%;
+           right: -83%;
     }
 
 }
